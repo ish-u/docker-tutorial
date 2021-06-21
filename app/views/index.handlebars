@@ -1,0 +1,28 @@
+<div class="container m-5" style="text-align: center;">
+  <h1>NOTES</h1>
+  <br />
+  <div style="text-align: center;">
+    <form action="/" method="POST">
+      <div class="container p-5">
+        <textarea
+          name="note"
+          class="form-control"
+          id=""
+          cols="10"
+          rows="5"
+          placeholder="Note"
+        >Write Note Here</textarea>
+      </div>
+      <button class="btn btn-dark">Submit</button>
+    </form>
+    <div class="container p-5">
+      {{#each notes}}
+        <ul>
+          <li>
+            {{this.note}}
+          </li>
+        </ul>
+      {{/each}}
+    </div>
+  </div>
+</div>
